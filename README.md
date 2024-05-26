@@ -16,15 +16,15 @@ An implementation of cp-sat solver for generalized tower of hanoi
 - The goal is to move all the disc from first rod to second rod.
 
 This code solves the problem using the CP-SAT library. This is not the best possible implementation, but is meant to demonstrate the power to CP-sat to solve a algorithmic problem using a optimization.
-In some sense this algorithm is what one would implement on a non-deterministic turing machine to solve this problem.
+In some sense this algorithm is what one would be implemented on a non-deterministic turing machine to solve the problem.
  
 ## Algorithm to solve generalized Tower of Hanoi.
  Only variables are:
- - NO_PILLER: int          : number of pillar to consider,
- - NO_DISC: int            : number of disc to consider,
- - MAX_RUN_TIME : float    : maximum no. of seconds to run,
- At the beginning, all the discs are placed on first pillar.
- At the end, we want all the disc to be on the last pillar.
+ - NO_PILLER: int          : number of rods,
+ - NO_DISC: int            : number of disc,
+ - MAX_RUN_TIME : float    : maximum run time,
+ At the beginning, all the discs are placed on first rod.
+ At the end, we want all the disc to be on the last rod.
 ### Example:
  for NO_PILLER = 4,NO_DISC = 4, the solution is
  [0 1 2 3][][][]  
@@ -38,6 +38,6 @@ In some sense this algorithm is what one would implement on a non-deterministic 
  [0][][][1 2 3]  
  [][][][0 1 2 3]  
 
- Each bracket represts a pillar. 
+ Each bracket [] represts a rod. 
  The number within them represent the disc, 
  where lower no. represts smaller diameter.
