@@ -26,7 +26,7 @@ In some sense this algorithm is what one would be implemented on a non-determini
  At the beginning, all the discs are placed on first rod.
  At the end, we want all the disc to be on the last rod.
 ### Example:
- for NO_PILLER = 4,NO_DISC = 4, the solution is
+ for NO_PILLER = 4,NO_DISC = 4, the solution is  
  [0 1 2 3][][][]  
  [1 2 3][][][0]  
  [2 3][][1][0]  
